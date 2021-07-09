@@ -47,8 +47,8 @@ app.get("/admin", (req, res) => {
     res.render("admin")
 })
 //routes call
-const aboutrouter = require("./routes/about")
-app.use("/", aboutrouter)
+const adminrouter = require("./routes/admin")
+app.use("/", adminrouter)
 
 app.listen(2000, () => {
     console.log("localhost://2000")

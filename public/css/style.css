@@ -800,7 +800,7 @@ a:focus {
     background-size: cover;
     height: 50vh;
     z-index: 1;
-    background-image: "./img/pic2.jpg";
+    background-image: "";
     text-align: center;
     size: 60px;
     font-weight: 600;
@@ -1030,5 +1030,216 @@ a:focus {
 
 
 /**************Admin********************/
+body {
+    background-color: #F3EBF6;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.main {
+    background-color: #FFFFFF;
+    width: 400px;
+    height: 400px;
+    margin: 7em auto;
+    border-radius: 1.5em;
+    box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+}
+
+.sign {
+    padding-top: 40px;
+    color: #8C55AA;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.un {
+width: 76%;
+color: rgb(38, 50, 56);
+font-weight: 700;
+font-size: 14px;
+letter-spacing: 1px;
+background: rgba(136, 126, 126, 0.04);
+padding: 10px 20px;
+border: none;
+border-radius: 20px;
+outline: none;
+box-sizing: border-box;
+border: 2px solid rgba(0, 0, 0, 0.02);
+margin-bottom: 50px;
+margin-left: 46px;
+text-align: center;
+margin-bottom: 27px;
+font-family: 'Ubuntu', sans-serif;
+}
+
+form.form1 {
+    padding-top: 40px;
+}
+
+.pass {
+        width: 76%;
+color: rgb(38, 50, 56);
+font-weight: 700;
+font-size: 14px;
+letter-spacing: 1px;
+background: rgba(136, 126, 126, 0.04);
+padding: 10px 20px;
+border: none;
+border-radius: 20px;
+outline: none;
+box-sizing: border-box;
+border: 2px solid rgba(0, 0, 0, 0.02);
+margin-bottom: 50px;
+margin-left: 46px;
+text-align: center;
+margin-bottom: 27px;
+font-family: 'Ubuntu', sans-serif;
+}
 
 
+.un:focus, .pass:focus {
+    border: 2px solid rgba(0, 0, 0, 0.18) !important;
+    
+}
+
+.submit {
+  cursor: pointer;
+    border-radius: 5em;
+    color: #fff;
+    background: linear-gradient(to right, #9C27B0, #E040FB);
+    border: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-left: 35%;
+    font-size: 13px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+}
+
+.forgot {
+    text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+    color: #E1BEE7;
+    padding-top: 15px;
+}
+
+a {
+    text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+    color: #E1BEE7;
+    text-decoration: none
+}
+
+@media (max-width: 600px) {
+    .main {
+        border-radius: 0px;
+    }
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .slick-slide {
+        margin: 0px 20px;
+      }
+      
+      .logo-carousel {
+        overflow: inherit;
+        border-top: 1px solid #353535;
+        border-bottom: 1px solid #353535;
+      }
+      
+      .slick-slide img {
+        width: 100%;
+      }
+      
+      .slick-track::before,
+      .slick-track::after {
+        display: table;
+        content: '';
+      }
+      
+      .slick-track::after {
+        clear: both;
+      }
+      
+      .slick-track {
+        padding: 1rem 0;
+      }
+      
+      .slick-loading .slick-track {
+        visibility: hidden;
+      }
+      
+      .slick-slide.slick-loading img {
+        display: none;
+      }
+      
+      .slick-slide.dragging img {
+        pointer-events: none;
+      }
+      
+      .slick-loading .slick-slide {
+        visibility: hidden;
+      }
+      
+      .slick-arrow {
+        position: absolute;
+        top: 50%;
+        background: url(https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/arrow.svg?sanitize=true) center no-repeat;
+        color: #fff;
+        filter: invert(77%) sepia(32%) saturate(1%) hue-rotate(344deg) brightness(105%) contrast(103%);
+        border: none;
+        width: 2rem;
+        height: 1.5rem;
+        text-indent: -10000px;
+        margin-top: -16px;
+        z-index: 99;
+      }
+      
+      .slick-arrow.slick-next {
+        right: -40px;
+        transform: rotate(180deg);
+      }
+      
+      .slick-arrow.slick-prev {
+        left: -40px;
+      }
+      
+      /* Media Queries */
+      
+      @media (max-width: 768px) {
+        .slick-arrow {
+          width: 1rem;
+          height: 1rem;
+        }
+      }
+      
+      body {
+          background-color: #010101;
+        }
+        
+      .row {
+        overflow: hidden;
+      }  
+      
+      /* JsFiddle Example only/don't use */
+      .logo-carousel {
+        margin-top: 32px;
+      }
