@@ -5,7 +5,10 @@ const bodyParser = require('body-parser')
 var exphbs = require('express-handlebars');
 const session = require("express-session");
 const path = require("path")
+
 const app = express();
+
+
 
 mongoose.connect('mongodb://localhost/my_database', {
     useNewUrlParser: true,
@@ -30,25 +33,23 @@ var jsonParser = bodyParser.json()
 var urlencodedParser = bodyParser.urlencoded({ extended: false })
 
 
-////Express static folder
-app.use(express.static(path.join(__dirname, "public")));
-app.use(
-    session({
-        secret: "secret",
-        resave: true,
-        saveUninitialized: true
-    })
-);
+
 app.get("/", (req, res) => {
     res.render("index")
 })
-
 app.get("/admin", (req, res) => {
     res.render("admin")
 })
+
+////Express static folder
+app.use(express.static(path.join(__dirname, "public")));
+
+
 //routes call
 const adminrouter = require("./routes/admin")
-app.use("/", adminrouter)
+app.use("/admin", adminrouter)
+
+
 
 app.listen(2000, () => {
     console.log("localhost://2000")

@@ -60,151 +60,6 @@
 
 <!-------tools----->
 
-<div class="brands">
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <div class="brands_slider_container">
-                    <div class="owl-carousel owl-theme brands_slider">
-                        <div class="owl-item">
-                            <div class="brands_item d-flex flex-column justify-content-center"><img src="img/css.png" alt=""></div>
-                        </div>
-                        <div class="owl-item">
-                            <div class="brands_item d-flex flex-column justify-content-center"><img src="img/css.png" alt=""></div>
-                        </div>
-                        <div class="owl-item">
-                            <div class="brands_item d-flex flex-column justify-content-center"><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1561819026/brands_4.jpg" alt=""></div>
-                        </div>
-                        <div class="owl-item">
-                            <div class="brands_item d-flex flex-column justify-content-center"><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1561819026/brands_5.jpg" alt=""></div>
-                        </div>
-                        <div class="owl-item">
-                            <div class="brands_item d-flex flex-column justify-content-center"><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1561819026/brands_3.jpg" alt=""></div>
-                        </div>
-                        <div class="owl-item">
-                            <div class="brands_item d-flex flex-column justify-content-center"><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1561819026/brands_6.jpg" alt=""></div>
-                        </div>
-                        <div class="owl-item">
-                            <div class="brands_item d-flex flex-column justify-content-center"><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1561819026/brands_7.jpg" alt=""></div>
-                        </div>
-                        <div class="owl-item">
-                            <div class="brands_item d-flex flex-column justify-content-center"><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1561819026/brands_8.jpg" alt=""></div>
-                        </div>
-                    </div> <!-- Brands Slider Navigation -->
-                    <div class="brands_nav brands_prev"><i class="fas fa-chevron-left"></i></div>
-                    <div class="brands_nav brands_next"><i class="fas fa-chevron-right"></i></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<style>
- 
-body {
-    
-}
-
-.brands {
-    width: 100%;
-    padding-top: 90px;
-    padding-bottom: 90px
-}
-
-.brands_slider_container {
-    height: 130px;
-    border: solid 1px #e8e8e8;
-    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
-    padding-left: 97px;
-    padding-right: 97px;
-    background:
-}
-
-.brands_slider {
-    height: 100%;
-    margin-top: 50px
-}
-
-.brands_item {
-    height: 100%
-}
-
-.brands_item img {
-    max-width: 100%
-}
-
-.brands_nav {
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    transform: translateY(-50%);
-    padding: 5px;
-    cursor: pointer
-}
-
-.brands_nav i {
-    color: 
-    -webkit-transition: all 200ms ease;
-    -moz-transition: all 200ms ease;
-    -ms-transition: all 200ms ease;
-    -o-transition: all 200ms ease;
-    transition: all 200ms ease
-}
-
-.brands_nav:hover i {
-    color: #676767
-}
-
-.brands_prev {
-    left: 40px
-}
-
-.brands_next {
-    right: 40px
-}
-</style>
-<script>
-   $(document).ready(function(){
-
-if($('.brands_slider').length)
-{
-var brandsSlider = $('.brands_slider');
-
-brandsSlider.owlCarousel(
-{
-loop:true,
-autoplay:true,
-autoplayTimeout:5000,
-nav:false,
-dots:false,
-autoWidth:true,
-items:9,
-margin:42
-});
-
-if($('.brands_prev').length)
-{
-var prev = $('.brands_prev');
-prev.on('click', function()
-{
-brandsSlider.trigger('prev.owl.carousel');
-});
-}
-
-if($('.brands_next').length)
-{
-var next = $('.brands_next');
-next.on('click', function()
-{
-brandsSlider.trigger('next.owl.carousel');
-});
-}
-}
-
-});
-</script>
 
 <!-- Service Start -->
 <div class="service" id="service">
@@ -323,7 +178,78 @@ brandsSlider.trigger('next.owl.carousel');
 </div>
 <!-- Blog End -->
 
-
+<!-- Experience Start -->
+        <div class="experience" id="experience">
+            <div class="container">
+                <header class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                    <p>My Resume</p>
+                    <h2>Education And Experience</h2>
+                </header>
+                <div class="timeline">
+                    <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+                        <div class="timeline-text">
+                            <div class="timeline-date">2056-2069</div>
+                            <h2>School</h2>
+                            <h4>Universal secondary Boarding School</h4>
+                            <p>
+                            kharanitar 2, Nuwakot Nepal 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
+                        <div class="timeline-text">
+                            <div class="timeline-date">2069-2072</div>
+                            <h2>+2</h2>
+                            <h4>Nobel Academy</h4>
+                            <p>
+                               New baneshwor,kathmandu Nepal
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+                        <div class="timeline-text">
+                            <div class="timeline-date">2072-2078</div>
+                            <h2>computer Science</h2>
+                            <h4>Nepal collage of information Technology</h4>
+                            <p>
+                               Balkumari, lalitpur Nepal
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
+                        <div class="timeline-text">
+                            <div class="timeline-date">1 year Experience</div>
+                            <h2>Node js</h2>
+                            <h4>Broadway infosys</h4>
+                            <p>
+                                Node js , mongodb ,Express, templet Engine:Handlebars
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+                        <div class="timeline-text">
+                            <div class="timeline-date">3 month Experience </div>
+                            <h2>CCNA</h2>
+                            <h4>broadway infosys</h4>
+                            <p>
+                               Routing protocol code,IPV4, IPV6 ,DHCP and DNS
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
+                        <div class="timeline-text">
+                            <div class="timeline-date">6 month Experience</div>
+                            <h2>Graphic Design</h2>
+                            <h4>Adobe photoshop, Adobe illustrator</h4>
+                            <p>
+                               Marketing & advertising graphic design, LOGO design, 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Job Experience End -->
 <!-- Contact Start -->
 <div class="contact wow fadeInUp" data-wow-delay="0.1s" id="contact">
     <div class="container-fluid">
@@ -366,7 +292,7 @@ brandsSlider.trigger('next.owl.carousel');
 </div>
 <!-- Contact End -->
 
-<div style="background-image: url('img/pic.png')"></div>
+<div style="background-image: url('pic.png')"></div>
 <div class="wow fadeInUp">
     <section class="parallax-section head-pad">
 
@@ -406,3 +332,24 @@ brandsSlider.trigger('next.owl.carousel');
     </li>
 
 </ul>
+
+<!-- tools -->
+  <div classname="container1">
+        <h2 classname="text-center font-weight-bold">Our Partners</h2>
+        <section classname="customer-logos slider">
+            <div classname="slide"><img src="images/adidas.png" alt="logo"></div>
+            <div classname="slide"><img src="images/facebook.png" alt="logo"></div>
+            <div classname="slide"><img src="images/google.png" alt="logo"></div>
+            <div classname="slide"><img src="images/instagram.png" alt="logo"></div>
+            <div classname="slide"><img src="images/nike.png" alt="logo"></div>
+            <div classname="slide"><img src="images/twitter.png" alt="logo"></div>
+            <div classname="slide"><img src="images/uber.png" alt="logo"></div>
+            <div classname="slide"><img src="images/youtube.png" alt="logo"></div>
+        </section>
+    </div>
+    
+
+   
+   
+       
+
